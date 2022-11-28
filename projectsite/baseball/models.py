@@ -44,7 +44,7 @@ class Play(BaseModel):
     ('First String', 'First String'),
     ('Second String','Second String'))
     player = models.ForeignKey(Person, on_delete=models.CASCADE, related_name = "Player")
-    team = models.ForeignKey(Person, on_delete=models.CASCADE, related_name = "Team")
+    team = models.ForeignKey(Club, on_delete=models.CASCADE, related_name = "Team")
     string_no = models.CharField(max_length=100, choices = STRING_CHOICES)
     isActive = models.BooleanField(default=False)
     pos = models.ForeignKey(Position, on_delete=models.CASCADE)

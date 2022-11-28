@@ -16,6 +16,7 @@
                 <th scope="col">Team/Club</th>
                 <th scope="col">Position</th>
                 <th scope="col">Status</th>
+                <th scope="col">String Number</th>
               </tr>
             </thead>
             <tbody>
@@ -27,6 +28,7 @@
                 <td>{{ object.team.name }}</td>
                 <td>{{ object.pos.description }}</td>
                 <td>{% if object.isActive == True %} Active {% else %} Inactive {% endif %}</td>
+                <td>{{ object.string_no}}</td>
               </tr>
               {% endfor %}
             </tbody>

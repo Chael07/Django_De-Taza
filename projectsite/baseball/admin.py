@@ -21,7 +21,7 @@ class ClubAdmin(admin.ModelAdmin):
 
 @admin.register(Play)
 class PlayAdmin(admin.ModelAdmin):
-    list_display = ("player","team","string_no","isActive",)
+    list_display = ("player","team","string_no","isActive", )
 
 @admin.register(Match)
 class MatchAdmin(admin.ModelAdmin):
