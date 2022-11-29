@@ -3,17 +3,17 @@
 
 {% block content %}
 <div class="container">
-    <p>
+    <b style="color:rgb(14, 13, 13);font-size:40px">
       {{ header_text }}
-    </p>
-
+    </b>
+<br><br>
     <div class="row">
         <ul class="list-unstyled">
             {% for object in object_list %}
             <li class="media">
               <img class="mr-3" src="../media/img/{{object.team_pic}}" height="100px" alt="Generic placeholder image">
               <div class="media-body">
-                <h5 class="mt-0 mb-1">{{object.name}}</h5>
+                <h5 class="mt-0 mb-1"><b>{{object.name}}</b></h5>
                 {{object.description}}
               </div>
             </li>

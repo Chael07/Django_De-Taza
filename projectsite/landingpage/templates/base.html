@@ -49,8 +49,8 @@
           <img src="{% static 'img/profile-img.jpg' %}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="{% url 'home' %}">Carl Michael De Taza</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://twitter.com/home" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100011285415841" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -73,26 +73,22 @@
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container" style="background-color:green;">
+    <section class="breadcrumbs" style="background-color:black;">
+      <div class="container" style="background-color:rgb(104, 104, 241);">
        
         <div class="d-flex justify-content-between align-items-center">
-          <h2 style="color:black;font-size:260%"><b>Football Cup</b></h2>
+          <h2 style="color:white;font-size:260%"><b>Football Cup</b></h2>
           <ol>
-            <li style="color:black;font-size:100%"><a href="{% url 'home' %}">Home</a></li>
-            <li>Inner Page</li>
-           
+            <li style="color:white;font-size:100%"><a href="{% url 'home' %}" style="color:white;font-size:100%">Home</a></li>
+            <li style="color:white;font-size:100%">Inner Page</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
-    <section class="inner-page">
+    <section class="inner-page" style="background-color:gray;">
       {% block content %}
-
       {% endblock content %}
     </section>
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
