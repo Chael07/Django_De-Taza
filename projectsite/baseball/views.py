@@ -19,7 +19,7 @@ class ClubView(ListView):
     model = Club
     context_object_name = 'club'
     template_name = "club.html"
-    paginate_by = 5
+    paginate_by = 15
 
     # This method is used to populate a dictionary to use as the template context.
     def get_context_data(self, **kwargs):
@@ -37,7 +37,7 @@ class PlayerView(ListView):
     model = Play
     context_object_name = 'play'
     template_name = "player.html"
-    paginate_by = 5
+    paginate_by = 15
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -52,7 +52,7 @@ class MatchView(ListView):
     model = Match
     context_object_name = 'match'
     template_name = "match.html"
-    paginate_by = 5
+    paginate_by = 15
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
